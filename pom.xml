@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.lovnx</groupId>
+  <artifactId>micro-service</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+    <module>ribbon</module>
+    <module>eureka-sever</module>
+    <module>config-server</module>
+    <module>zuul</module>
+    <module>service-A</module>
+    <module>service-B</module>
+    <module>service-B2</module>
+    <module>hystrix-ribbon</module>
+    <module>feign</module>
+    <module>hystrix-feign</module>
+    <module>hystrix-dashboard</module>
+    <module>turbine</module>
+    <module>service-admin</module>
+    <module>sleuth</module>
+    <module>service-B3</module>
+    <module>Zuul_CAS</module>
+    <module>Service-B4</module>
+    <module>Zuul_CAS_new</module>
+  </modules>
+  
+  	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.2.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<dependencies>
+		<dependency>
+		    <groupId>com.sun.jersey</groupId>
+		    <artifactId>jersey-server</artifactId>
+		    <version>1.17.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.sun.jersey</groupId>
+		    <artifactId>jersey-core</artifactId>
+		    <version>1.17.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.sun.jersey</groupId>
+		    <artifactId>jersey-servlet</artifactId>
+		    <version>1.17.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.netflix.servo</groupId>
+		    <artifactId>servo-core</artifactId>
+		    <version>0.12.7</version>
+		</dependency>
+	</dependencies>
+</project>
